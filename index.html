@@ -125,7 +125,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.3); /* Subtle glassy blackish overlay for slider */
             z-index: 1;
         }
 
@@ -136,66 +136,65 @@
             transform: translate(-50%, -50%);
             text-align: center;
             z-index: 2;
-            color: #fff;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px 30px;
+            color: #000; /* Black text */
+            background: rgba(255, 255, 255, 0.7); /* Glassy white shade for text background */
+            padding: 15px 25px;
             border-radius: 10px;
             box-shadow: var(--shadow);
-            animation: straightSlideUp 1s ease-in-out; /* Custom straight-up animation */
+            animation: straightSlideUp 1s ease-in-out;
+            width: 90%; /* Ensure text fits within section */
+            max-width: 800px; /* Prevent overly wide caption */
         }
 
         /* Custom Animation for Straight Up Motion */
         @keyframes straightSlideUp {
             0% {
-                transform: translate(-50%, 100%); /* Start from bottom center */
+                transform: translate(-50%, 100%);
                 opacity: 0;
             }
             100% {
-                transform: translate(-50%, -50%); /* End at center */
+                transform: translate(-50%, -50%);
                 opacity: 1;
             }
         }
 
         .hero-section .carousel-caption h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            background: linear-gradient(45deg, #ffffff, #e6f0fa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1.5rem;
+            color: #000; /* Black text */
+            margin-bottom: 1rem;
             letter-spacing: 1px;
         }
 
         .hero-section .carousel-caption h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 600;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
             color: var(--accent-color);
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .hero-section .carousel-caption p {
-            font-size: 1.2rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            line-height: 1.6;
+            font-size: 1rem;
+            color: #000; /* Black text */
+            line-height: 1.5;
         }
 
         @media (max-width: 767.98px) {
             .hero-section .carousel-caption h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .hero-section .carousel-caption h3 {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
 
             .hero-section .carousel-caption p {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
 
             .hero-section .carousel-caption {
-                padding: 15px 20px;
+                padding: 10px 15px;
+                width: 95%;
             }
         }
 
@@ -1412,7 +1411,7 @@
                         } else {
                             this.classList.remove('is-invalid');
                         }
-                    } else if (this.type === 'tel' && this.value) {
+                    } else if (this.type === 'tel' && input.value) {
                         const phoneRegex = /^\+?\d{10,15}$/;
                         if (!phoneRegex.test(this.value)) {
                             this.classList.add('is-invalid');
