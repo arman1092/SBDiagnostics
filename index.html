@@ -220,7 +220,7 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(0,0,ゼロ);
             transition: transform 0.3s, background-color 0.3s;
         }
 
@@ -323,62 +323,62 @@
         }
 
         /* Gallery Section */
-.gallery-section {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
+        .gallery-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
 
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
 
-.gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.5s;
-}
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
 
-.gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
 
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
 
-.gallery-overlay p {
-    color: #fff;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    padding: 0 10px;
-}
+        .gallery-overlay p {
+            color: #fff;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 0 10px;
+        }
 
-@media (max-width: 767.98px) {
-    .gallery-item img {
-        height: 150px;
-    }
-    .gallery-overlay p {
-        font-size: 0.9rem;
-    }
-}
+        @media (max-width: 767.98px) {
+            .gallery-item img {
+                height: 150px;
+            }
+            .gallery-overlay p {
+                font-size: 0.9rem;
+            }
+        }
 
         /* Service Card */
         .service-card {
@@ -501,88 +501,6 @@
             }
         }
 
-        /* Testimonials Section */
-        .testimonials-section {
-            background-color: #e6f0fa;
-            padding: 60px 0;
-        }
-
-        .carousel-item {
-            padding: 15px;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 5%;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        @media (max-width: 767.98px) {
-            .testimonials-section {
-                padding: 40px 0;
-            }
-            .carousel-item img {
-                width: 80px;
-                height: 80px;
-            }
-            .carousel-item .lead {
-                font-size: 0.9rem;
-            }
-        }
-
-        /* FAQ Section */
-        .accordion-button {
-            background-color: #ffffff;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            transition: background-color 0.3s;
-        }
-
-        .accordion-button:not(.collapsed) {
-            background-color: #007bff;
-            color: #ffffff;
-        }
-
-        @media (max-width: 767.98px) {
-            .accordion-body {
-                font-size: 0.85rem;
-            }
-        }
-
-        /* Blog Section */
-        .blog-card {
-            background: #ffffff;
-            border-radius: 15px;
-            overflow: hidden;
-            transition: transform 0.4s, box-shadow 0.4s;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .blog-card img {
-            height: 180px;
-            object-fit: cover;
-            loading: lazy;
-        }
-
-        @media (max-width: 767.98px) {
-            .blog-card img {
-                height: 150px;
-            }
-            .blog-card .card-body {
-                padding: 10px;
-            }
-            .blog-card .card-title {
-                font-size: 1.1rem;
-            }
-            .blog-card .card-text {
-                font-size: 0.85rem;
-            }
-        }
-
         /* Contact Section */
         .contact-section {
             background: linear-gradient(135deg, #ffffff, #e6f0fa);
@@ -640,40 +558,6 @@
             .contact-section iframe {
                 height: 300px;
                 margin-top: 20px;
-            }
-        }
-
-        /* Newsletter Section */
-        .newsletter-section {
-            padding: 50px 0;
-            background: #007bff;
-            color: #fff;
-        }
-
-        .newsletter-section .form-control {
-            border-radius: 25px 0 0 25px;
-            font-size: 0.9rem;
-        }
-
-        .newsletter-section .btn {
-            border-radius: 0 25px 25px 0;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 767.98px) {
-            .newsletter-section {
-                padding: 40px 0;
-            }
-            .newsletter-section .form-control {
-                border-radius: 25px;
-                margin-bottom: 10px;
-            }
-            .newsletter-section .btn {
-                border-radius: 25px;
-                width: 100%;
-            }
-            .newsletter-section .d-flex {
-                flex-direction: column;
             }
         }
 
@@ -761,7 +645,7 @@
             height: 45px;
             border-radius: 50%;
             display: flex;
-            align-items: center;
+            align-items:1;
             justify-content: center;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             z-index: 1000;
@@ -836,9 +720,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -1188,49 +1070,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section section-padding">
-        <div class="container">
-            <h2 class="text-center mb-5 animate__animated animate__fadeIn">What Our Patients Say</h2>
-            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="text-center">
-                            <img src="patient1.jpg" alt="Jane Doe" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;" loading="lazy">
-                            <p class="lead">"The staff was incredibly professional, and the process was seamless. Highly recommend!"</p>
-                            <h5>Jane Doe</h5>
-                            <p>Patient</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="text-center">
-                            <img src="patient2.jpg" alt="John Wilson" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;" loading="lazy">
-                            <p class="lead">"The advanced technology and caring team made my experience exceptional."</p>
-                            <h5>John Wilson</h5>
-                            <p>Patient</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="text-center">
-                            <img src="patient3.jpg" alt="Sarah Brown" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;" loading="lazy">
-                            <p class="lead">"Quick results and a comfortable environment. I felt well taken care of."</p>
-                            <h5>Sarah Brown</h5>
-                            <p>Patient</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
     <!-- FAQ Section -->
     <section id="faq" class="section-padding">
         <div class="container">
@@ -1288,61 +1127,6 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="section-padding">
-        <div class="container">
-            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Latest Blog Posts</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card blog-card sr-item">
-                        <img src="blog1.jpg" alt="Blog Post 1" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Understanding X-Ray Safety</h5>
-                            <p class="card-text">Learn about our safety measures to ensure minimal radiation exposure.</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card sr-item" style="animation-delay: 0.2s;">
-                        <img src="blog2.jpg" alt="Blog Post 2" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Benefits of Early Diagnostics</h5>
-                            <p class="card-text">Discover how early imaging leads to better health outcomes.</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card sr-item" style="animation-delay: 0.4s;">
-                        <img src="blog3.jpg" alt="Blog Post 3" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Advancements in Respiratory Diagnostics</h5>
-                            <p class="card-text">Explore the latest innovations in PFT and bronchoscopy.</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section id="newsletter" class="newsletter-section">
-        <div class="container">
-            <h2 class="text-center mb-4">Stay Updated</h2>
-            <p class="text-center mb-4">Subscribe to our newsletter for the latest health tips and updates.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form id="newsletterForm" class="d-flex">
-                        <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-accent">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
         <div class="container">
@@ -1374,7 +1158,7 @@
                     </form>
                 </div>
                 <div class="col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.196!2d77.072974!3d28.711987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjiNDInNDMuMiJOIDc3wrA0NCcxNi41IkU!5e0!3m2!1sen!2sin!4v1634567890123!5m2!1sen!2sin" width="100%" height="400" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.808734732241!2d77.06200427606261!3d28.725261479862628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0754bfa40113%3A0xa453919e97e29cf!2sS.B.%20DIAGNOSTICS!5e0!3m2!1sen!2sin!4v1751363595654!5m2!1sen!2sin" width="100%" height="400" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -1580,7 +1364,7 @@
                 });
 
                 if (isValid) {
-                    alert(`${formId === 'contactForm' ? 'Contact form' : formId === 'appointmentForm' ? 'Appointment' : 'Newsletter'} submitted! (This is a placeholder action)`);
+                    alert(`${formId === 'contactForm' ? 'Contact form' : 'Appointment'} submitted! (This is a placeholder action)`);
                     form.reset();
                     if (formId === 'appointmentForm') {
                         bootstrap.Modal.getInstance(document.getElementById('appointmentModal')).hide();
@@ -1616,7 +1400,6 @@
 
         validateForm('contactForm');
         validateForm('appointmentForm');
-        validateForm('newsletterForm');
 
         // Live Chat Placeholder
         document.getElementById('liveChatBtn').addEventListener('click', function(e) {
