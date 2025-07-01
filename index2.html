@@ -32,7 +32,7 @@
 
         .navbar.scrolled {
             background-color: rgba(255, 255, 255, 0.95);
-            padding: 8px 0;
+            padding: 10px 0;
         }
 
         .navbar-brand img {
@@ -49,7 +49,6 @@
             padding-bottom: 5px;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
-            font-size: 1rem;
         }
 
         .nav-link::after {
@@ -67,30 +66,15 @@
             width: 100%;
         }
 
-        .navbar-nav {
-            gap: 10px;
-        }
-
-        @media (max-width: 991.98px) {
-            .navbar-nav {
-                padding: 15px 0;
-                text-align: center;
-            }
-            .nav-link {
-                font-size: 1.1rem;
-                margin: 5px 0;
-            }
-        }
-
         /* Hero Section */
         .hero-section {
             position: relative;
-            height: 60vh;
+            height: 50vh;
             overflow: hidden;
         }
 
         .hero-section .carousel-item {
-            height: 60vh;
+            height: 50vh;
         }
 
         .hero-section .carousel-item img {
@@ -105,7 +89,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.3); /* Subtle glassy blackish overlay for slider */
             z-index: 1;
         }
 
@@ -116,16 +100,17 @@
             transform: translate(-50%, -50%);
             text-align: center;
             z-index: 2;
-            color: #000;
-            background: rgba(255, 255, 255, 0.7);
-            padding: 15px 25px;
+            color: #000; /* Black text */
+            background: rgba(255, 255, 255, 0.7); /* Glassy white shade for text background */
+            padding: 10px 20px;
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             animation: straightSlideUp 1s ease-in-out;
-            width: 90%;
-            max-width: 700px;
+            width: 90%; /* Ensure text fits within section */
+            max-width: 800px; /* Prevent overly wide caption */
         }
 
+        /* Custom Animation for Straight Up Motion */
         @keyframes straightSlideUp {
             0% {
                 transform: translate(-50%, 100%);
@@ -138,72 +123,57 @@
         }
 
         .hero-section .carousel-caption h1 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            color: #000;
+            color: #000; /* Black text */
             margin-bottom: 0.8rem;
             letter-spacing: 1px;
         }
 
         .hero-section .carousel-caption h3 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 600;
             color: #28a745;
             margin-bottom: 0.6rem;
         }
 
         .hero-section .carousel-caption p {
-            font-size: 0.95rem;
-            color: #000;
+            font-size: 1rem;
+            color: #000; /* Black text */
             line-height: 1.4;
             margin-bottom: 0.5rem;
         }
 
         @media (max-width: 767.98px) {
-            .hero-section {
-                height: 50vh;
-            }
-            .hero-section .carousel-item {
-                height: 50vh;
-            }
-            .hero-section .carousel-caption {
-                padding: 10px 15px;
-                width: 95%;
-                max-width: 95%;
-            }
             .hero-section .carousel-caption h1 {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
+
             .hero-section .carousel-caption h3 {
                 font-size: 1rem;
             }
+
             .hero-section .carousel-caption p {
-                font-size: 0.75rem;
+                font-size: 0.8rem;
                 line-height: 1.3;
             }
-        }
 
-        @media (max-width: 575.98px) {
-            .hero-section .carousel-caption h1 {
-                font-size: 1.2rem;
-            }
-            .hero-section .carousel-caption h3 {
-                font-size: 0.9rem;
-            }
-            .hero-section .carousel-caption p {
-                font-size: 0.7rem;
+            .hero-section .carousel-caption {
+                padding: 8px 12px;
+                width: 95%;
+                max-width: 95%;
             }
         }
 
         /* Features Section */
         .features-section {
-            padding: 60px 0;
+            padding: 80px 0;
             background-color: #ffffff;
         }
 
         .feature-item {
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             transition: transform 0.3s;
         }
 
@@ -212,32 +182,32 @@
         }
 
         .feature-circle {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             background-color: #007bff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 15px;
+            margin: 0 auto 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s, background-color 0.3s;
         }
 
         .feature-circle i {
             color: #ffffff;
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
 
         .feature-item h5 {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             margin-bottom: 10px;
             color: #333;
             font-family: 'Poppins', sans-serif;
         }
 
         .feature-item p {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: #666;
         }
 
@@ -247,56 +217,41 @@
         }
 
         @media (max-width: 767.98px) {
-            .features-section {
-                padding: 40px 0;
-            }
             .feature-circle {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
             }
             .feature-circle i {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             .feature-item h5 {
                 font-size: 1.1rem;
             }
             .feature-item p {
-                font-size: 0.8rem;
+                font-size: 0.85rem;
             }
         }
 
         /* Statistics Section */
         .stats-section {
-            padding: 50px 0;
+            padding: 60px 0;
             background: linear-gradient(135deg, #e6f0fa, #ffffff);
         }
 
         .stat-item {
             text-align: center;
-            padding: 15px;
+            padding: 20px;
         }
 
         .stat-item h3 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #007bff;
             font-family: 'Poppins', sans-serif;
         }
 
         .stat-item p {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #666;
-        }
-
-        @media (max-width: 767.98px) {
-            .stats-section {
-                padding: 40px 0;
-            }
-            .stat-item h3 {
-                font-size: 1.8rem;
-            }
-            .stat-item p {
-                font-size: 0.85rem;
-            }
         }
 
         /* Service Comparison */
@@ -304,99 +259,79 @@
             background: #ffffff;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            padding: 15px;
-            overflow-x: auto;
+            padding: 20px;
         }
 
         .comparison-table th, .comparison-table td {
             vertical-align: middle;
             text-align: center;
-            font-size: 0.9rem;
-            padding: 10px;
-        }
-
-        @media (max-width: 767.98px) {
-            .comparison-table th, .comparison-table td {
-                font-size: 0.8rem;
-                padding: 8px;
-            }
         }
 
         /* Gallery Section */
-.gallery-section {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
+        .gallery-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
 
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
 
-.gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.5s;
-}
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
 
-.gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
 
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
 
-.gallery-overlay p {
-    color: #fff;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    padding: 0 10px;
-}
-
-@media (max-width: 767.98px) {
-    .gallery-item img {
-        height: 150px;
-    }
-    .gallery-overlay p {
-        font-size: 0.9rem;
-    }
-}
+        .gallery-overlay p {
+            color: #fff;
+            font-size: 1.2rem;
+            font-family: 'Poppins', sans-serif;
+        }
 
         /* Service Card */
         .service-card {
             background: #ffffff;
             border-radius: 15px;
             overflow: hidden;
-            transition: transform 0.4s, box-shadow 0.4s;
+            transition: transform 0.4s, box-shadow 0.4s, height 0.4s;
             position: relative;
-            min-height: 350px;
+            height: 350px;
         }
 
         .service-card:hover {
             transform: translateY(-15px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            height: 500px;
         }
 
         .service-card img {
-            height: 180px;
+            height: 220px;
             object-fit: cover;
             transition: transform 0.5s;
             loading: lazy;
@@ -407,7 +342,7 @@
         }
 
         .service-card .card-body {
-            padding: 15px;
+            padding: 20px;
             position: relative;
         }
 
@@ -423,27 +358,11 @@
             opacity: 1;
         }
 
-        @media (max-width: 767.98px) {
-            .service-card {
-                min-height: 300px;
-            }
-            .service-card img {
-                height: 150px;
-            }
-            .service-card .card-body {
-                padding: 10px;
-            }
-            .service-card .card-details {
-                font-size: 0.85rem;
-            }
-        }
-
         /* About Section */
         .about-section {
             background: url('about-bg.jpg') no-repeat center center/cover;
             color: #fff;
             position: relative;
-            padding: 60px 0;
         }
 
         .about-section::before {
@@ -454,17 +373,6 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-        }
-
-        .about-section .container {
-            position: relative;
-            z-index: 1;
-        }
-
-        @media (max-width: 991.98px) {
-            .about-section img {
-                margin-bottom: 20px;
-            }
         }
 
         /* Team Section */
@@ -481,53 +389,24 @@
         }
 
         .team-card img {
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             loading: lazy;
-        }
-
-        @media (max-width: 767.98px) {
-            .team-card img {
-                height: 150px;
-            }
-            .team-card .card-body {
-                padding: 10px;
-            }
-            .team-card .card-title {
-                font-size: 1.1rem;
-            }
-            .team-card .card-text {
-                font-size: 0.85rem;
-            }
         }
 
         /* Testimonials Section */
         .testimonials-section {
             background-color: #e6f0fa;
-            padding: 60px 0;
         }
 
         .carousel-item {
-            padding: 15px;
+            padding: 20px;
         }
 
         .carousel-control-prev,
         .carousel-control-next {
             width: 5%;
             background: rgba(0, 0, 0, 0.3);
-        }
-
-        @media (max-width: 767.98px) {
-            .testimonials-section {
-                padding: 40px 0;
-            }
-            .carousel-item img {
-                width: 80px;
-                height: 80px;
-            }
-            .carousel-item .lead {
-                font-size: 0.9rem;
-            }
         }
 
         /* FAQ Section */
@@ -541,12 +420,6 @@
         .accordion-button:not(.collapsed) {
             background-color: #007bff;
             color: #ffffff;
-        }
-
-        @media (max-width: 767.98px) {
-            .accordion-body {
-                font-size: 0.85rem;
-            }
         }
 
         /* Blog Section */
@@ -563,37 +436,20 @@
         }
 
         .blog-card img {
-            height: 180px;
+            height: 200px;
             object-fit: cover;
             loading: lazy;
-        }
-
-        @media (max-width: 767.98px) {
-            .blog-card img {
-                height: 150px;
-            }
-            .blog-card .card-body {
-                padding: 10px;
-            }
-            .blog-card .card-title {
-                font-size: 1.1rem;
-            }
-            .blog-card .card-text {
-                font-size: 0.85rem;
-            }
         }
 
         /* Contact Section */
         .contact-section {
             background: linear-gradient(135deg, #ffffff, #e6f0fa);
-            padding: 60px 0;
         }
 
         .form-control {
             border-radius: 8px;
             border: 1px solid #ced4da;
             transition: border-color 0.3s, box-shadow 0.3s;
-            font-size: 0.9rem;
         }
 
         .form-control:focus {
@@ -608,10 +464,9 @@
         .btn-primary {
             background-color: #007bff;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 8px;
             transition: background-color 0.3s, transform 0.3s;
-            font-size: 0.9rem;
         }
 
         .btn-primary:hover {
@@ -622,10 +477,9 @@
         .btn-accent {
             background-color: #28a745;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 8px;
             transition: background-color 0.3s, transform 0.3s;
-            font-size: 0.9rem;
         }
 
         .btn-accent:hover {
@@ -633,48 +487,19 @@
             transform: scale(1.05);
         }
 
-        @media (max-width: 991.98px) {
-            .contact-section .row {
-                flex-direction: column-reverse;
-            }
-            .contact-section iframe {
-                height: 300px;
-                margin-top: 20px;
-            }
-        }
-
         /* Newsletter Section */
         .newsletter-section {
-            padding: 50px 0;
+            padding: 60px 0;
             background: #007bff;
             color: #fff;
         }
 
         .newsletter-section .form-control {
             border-radius: 25px 0 0 25px;
-            font-size: 0.9rem;
         }
 
         .newsletter-section .btn {
             border-radius: 0 25px 25px 0;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 767.98px) {
-            .newsletter-section {
-                padding: 40px 0;
-            }
-            .newsletter-section .form-control {
-                border-radius: 25px;
-                margin-bottom: 10px;
-            }
-            .newsletter-section .btn {
-                border-radius: 25px;
-                width: 100%;
-            }
-            .newsletter-section .d-flex {
-                flex-direction: column;
-            }
         }
 
         /* Footer */
@@ -685,34 +510,23 @@
 
         .footer-links a {
             color: #333;
-            margin: 0 10px;
+            margin: 0 15px;
             transition: color 0.3s;
-            font-size: 0.9rem;
         }
 
         .footer-links a:hover {
             color: #007bff;
         }
 
-        @media (max-width: 767.98px) {
-            footer .col-md-4 {
-                margin-bottom: 20px;
-            }
-            .footer-links a {
-                display: block;
-                margin: 5px 0;
-            }
-        }
-
         /* Back to Top Button */
         #backToTop {
             position: fixed;
             bottom: 30px;
-            right: 20px;
+            right: 30px;
             background-color: #007bff;
             color: #fff;
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -734,16 +548,15 @@
         /* Sticky Appointment Button */
         #stickyBookBtn {
             position: fixed;
-            bottom: 80px;
-            right: 20px;
+            bottom: 90px;
+            right: 30px;
             background-color: #28a745;
             color: #fff;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 25px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             z-index: 1000;
             transition: transform 0.3s;
-            font-size: 0.9rem;
         }
 
         #stickyBookBtn:hover {
@@ -753,12 +566,12 @@
         /* Live Chat Button */
         #liveChatBtn {
             position: fixed;
-            bottom: 130px;
-            right: 20px;
+            bottom: 150px;
+            right: 30px;
             background-color: #ff4500;
             color: #fff;
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -779,15 +592,6 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
-        @media (max-width: 575.98px) {
-            .modal-dialog {
-                margin: 10px;
-            }
-            .modal-body {
-                padding: 15px;
-            }
-        }
-
         /* Parallax Effect */
         .parallax {
             background-attachment: fixed;
@@ -796,26 +600,9 @@
             background-size: cover;
         }
 
-        @media (max-width: 767.98px) {
-            .parallax {
-                background-attachment: scroll;
-            }
-        }
-
         /* Animation Delays */
         .animate__animated {
             animation-duration: 1.2s;
-        }
-
-        /* Section Padding */
-        .section-padding {
-            padding: 60px 0;
-        }
-
-        @media (max-width: 767.98px) {
-            .section-padding {
-                padding: 40px 0;
-            }
         }
     </style>
 </head>
@@ -978,7 +765,7 @@
                         <img src="xray.jpg" alt="X-Ray Imaging" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">X-Ray Imaging</h5>
-                            <p class="card-text">High-resolution X-ray imaging for precise diagnostics (excluding dental X-rays).</p>
+                            <p class="card-text">High-resolution X-ray imaging for precise diagnostics.</p>
                             <div class="card-details">
                                 <p>Our X-ray services provide clear images for accurate diagnosis.</p>
                                 <ul>
@@ -986,57 +773,43 @@
                                     <li>Minimal radiation exposure</li>
                                     <li>AI-enhanced analysis</li>
                                 </ul>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card service-card sr-item" style="animation-delay: 0.2s;">
-                        <img src="bloodtest.jpg" alt="Blood Tests" class="card-img-top">
+                        <img src="ctscan.jpg" alt="CT Scan" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Blood Tests</h5>
-                            <p class="card-text">Comprehensive blood testing for accurate health insights.</p>
+                            <h5 class="card-title">CT Scan</h5>
+                            <p class="card-text">Advanced 3D imaging for detailed diagnostics.</p>
                             <div class="card-details">
-                                <p>Our blood tests cover a wide range of diagnostic needs.</p>
+                                <p>State-of-the-art CT scanners for comprehensive diagnostics.</p>
                                 <ul>
-                                    <li>Fast and reliable results</li>
-                                    <li>Wide range of tests</li>
-                                    <li>Expert analysis</li>
+                                    <li>High-resolution 3D imaging</li>
+                                    <li>Fast scan times</li>
+                                    <li>Comfortable experience</li>
                                 </ul>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card service-card sr-item" style="animation-delay: 0.4s;">
-                        <img src="pft.jpg" alt="PFT" class="card-img-top">
+                        <img src="ultra.jpg" alt="Ultrasound" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Pulmonary Function Test (PFT)</h5>
-                            <p class="card-text">Non-invasive tests to assess lung function.</p>
+                            <h5 class="card-title">Ultrasound</h5>
+                            <p class="card-text">Non-invasive imaging for safe diagnostics.</p>
                             <div class="card-details">
-                                <p>PFTs help diagnose and monitor lung conditions.</p>
+                                <p>Ultrasound uses sound waves for safe diagnostics.</p>
                                 <ul>
-                                    <li>Non-invasive procedure</li>
-                                    <li>Accurate lung function assessment</li>
+                                    <li>Safe for all patients</li>
+                                    <li>Real-time imaging</li>
                                     <li>Expert interpretation</li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card service-card sr-item" style="animation-delay: 0.6s;">
-                        <img src="bron.webp" alt="Bronchoscopy" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Bronchoscopy</h5>
-                            <p class="card-text">Advanced procedure to examine airways.</p>
-                            <div class="card-details">
-                                <p>Bronchoscopy aids in diagnosing respiratory conditions.</p>
-                                <ul>
-                                    <li>Minimally invasive</li>
-                                    <li>High diagnostic accuracy</li>
-                                    <li>Performed by specialists</li>
-                                </ul>
+                               
                             </div>
                         </div>
                     </div>
@@ -1050,39 +823,34 @@
                         <tr>
                             <th>Feature</th>
                             <th>X-Ray</th>
-                            <th>Blood Tests</th>
-                            <th>PFT</th>
-                            <th>Bronchoscopy</th>
+                            <th>CT Scan</th>
+                            <th>Ultrasound</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Type</td>
-                            <td>Imaging</td>
-                            <td>Laboratory</td>
-                            <td>Functional</td>
-                            <td>Endoscopic</td>
+                            <td>Radiation Exposure</td>
+                            <td>Low</td>
+                            <td>Moderate</td>
+                            <td>None</td>
                         </tr>
                         <tr>
                             <td>Procedure Time</td>
                             <td>5-10 min</td>
-                            <td>5-15 min</td>
-                            <td>15-30 min</td>
-                            <td>30-60 min</td>
+                            <td>10-30 min</td>
+                            <td>15-45 min</td>
                         </tr>
                         <tr>
                             <td>Best For</td>
                             <td>Bones, Fractures</td>
-                            <td>Blood Analysis</td>
-                            <td>Lung Function</td>
-                            <td>Airway Issues</td>
+                            <td>Internal Organs</td>
+                            <td>Soft Tissues, Pregnancy</td>
                         </tr>
                         <tr>
                             <td>Home Service</td>
                             <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
                             <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
                         </tr>
                     </tbody>
                 </table>
@@ -1096,21 +864,21 @@
             <h2 class="text-center mb-5 animate__animated animate__fadeIn">Our Facilities</h2>
             <div class="row g-4">
                 <div class="col-md-4 gallery-item sr-item">
-                    <img src="xrayroom.jpeg" alt="X-Ray Room" loading="lazy">
+                    <img src="xrayroom.jpg" alt="X-Ray Room" loading="lazy">
                     <div class="gallery-overlay">
                         <p>Advanced X-Ray Suite</p>
                     </div>
                 </div>
                 <div class="col-md-4 gallery-item sr-item" style="animation-delay: 0.2s;">
-                    <img src="lab.jpeg" alt="Laboratory" loading="lazy">
+                    <img src="ctscanner.jpg" alt="CT Scanner" loading="lazy">
                     <div class="gallery-overlay">
-                        <p>State-of-the-Art Laboratory</p>
+                        <p>State-of-the-Art CT Scanner</p>
                     </div>
                 </div>
                 <div class="col-md-4 gallery-item sr-item" style="animation-delay: 0.4s;">
-                    <img src="bronchoscopyroom.jpg" alt="Bronchoscopy Room" loading="lazy">
+                    <img src="ultrasoundroom.jpg" alt="Ultrasound Room" loading="lazy">
                     <div class="gallery-overlay">
-                        <p>Advanced Bronchoscopy Suite</p>
+                        <p>Comfortable Ultrasound Suite</p>
                     </div>
                 </div>
             </div>
@@ -1140,15 +908,15 @@
     <!-- Team Section -->
     <section id="team" class="section-padding">
         <div class="container">
-            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Our Doctors</h2>
+            <h2 class="text-center mb-5 animate__animated animate__fadeIn">Meet Our Team</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card team-card sr-item">
-                        <img src="doctor1.jpeg" alt="Dr. Pratibha Prabhas Jha" class="card-img-top">
+                        <img src="doctor1.jpg" alt="Dr. John Smith" class="card-img-top">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Dr. Pratibha Prabhas Jha</h5>
-                            <p class="card-text"> MBBS,MD,DM (chest specialist)</p>
-                            <p>Renowned chest specialist with extensive expertise in respiratory diagnostics and treatment.</p>
+                            <h5 class="card-title">Dr. John Smith</h5>
+                            <p class="card-text">Chief Radiologist</p>
+                            <p>Specializing in advanced imaging with 15+ years of experience.</p>
                             <div class="social-links">
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1161,8 +929,8 @@
                         <img src="doctor2.jpg" alt="Dr. Emily Davis" class="card-img-top">
                         <div class="card-body text-center">
                             <h5 class="card-title">Dr. Emily Davis</h5>
-                            <p class="card-text">Laboratory Specialist</p>
-                            <p>Expert in blood test analysis and patient care.</p>
+                            <p class="card-text">Ultrasound Specialist</p>
+                            <p>Expert in non-invasive diagnostics and patient care.</p>
                             <div class="social-links">
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1175,8 +943,8 @@
                         <img src="doctor3.jpg" alt="Dr. Michael Lee" class="card-img-top">
                         <div class="card-body text-center">
                             <h5 class="card-title">Dr. Michael Lee</h5>
-                            <p class="card-text">Bronchoscopy Expert</p>
-                            <p>Renowned for precision in respiratory diagnostics.</p>
+                            <p class="card-text">CT Scan Expert</p>
+                            <p>Renowned for precision in CT imaging.</p>
                             <div class="social-links">
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1251,36 +1019,36 @@
                 <div class="accordion-item sr-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                            How do I prepare for a blood test?
+                            How do I prepare for a CT scan?
                         </button>
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            You may need to fast for certain tests. Our team will provide specific instructions prior to your appointment.
+                            You may need to fast for a few hours and avoid certain medications. Our team will provide specific instructions.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item sr-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                            What is a Pulmonary Function Test (PFT)?
+                            Is ultrasound safe?
                         </button>
                     </h2>
                     <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            A PFT is a non-invasive test that measures lung function, helping diagnose conditions like asthma or COPD.
+                            Yes, ultrasound is non-invasive and uses sound waves, making it safe for patients, including pregnant women.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item sr-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                            What happens during a bronchoscopy?
+                            Can I get results on the same day?
                         </button>
                     </h2>
                     <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            A bronchoscopy involves inserting a thin tube into the airways to diagnose respiratory issues. It's performed under sedation by specialists.
+                            For most X-rays and ultrasounds, results are available within 24 hours. CT scan results may take slightly longer.
                         </div>
                     </div>
                 </div>
@@ -1317,8 +1085,8 @@
                     <div class="card blog-card sr-item" style="animation-delay: 0.4s;">
                         <img src="blog3.jpg" alt="Blog Post 3" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Advancements in Respiratory Diagnostics</h5>
-                            <p class="card-text">Explore the latest innovations in PFT and bronchoscopy.</p>
+                            <h5 class="card-title">Advancements in CT Technology</h5>
+                            <p class="card-text">Explore the latest innovations in CT scanning.</p>
                             <a href="#" class="btn btn-outline-primary">Read More</a>
                         </div>
                     </div>
@@ -1374,7 +1142,7 @@
                     </form>
                 </div>
                 <div class="col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.196!2d77.072974!3d28.711987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjiNDInNDMuMiJOIDc3wrA0NCcxNi41IkU!5e0!3m2!1sen!2sin!4v1634567890123!5m2!1sen!2sin" width="100%" height="400" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086!2d-122.419415684681!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjciTiAxMjLCsDI1JzA5LjkiVw!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus" width="100%" height="400" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -1420,9 +1188,8 @@
                             <select class="form-select" id="apptType" required>
                                 <option value="" disabled selected>Select Service</option>
                                 <option value="xray">X-Ray Imaging</option>
-                                <option value="bloodtest">Blood Tests</option>
-                                <option value="pft">Pulmonary Function Test (PFT)</option>
-                                <option value="bronchoscopy">Bronchoscopy</option>
+                                <option value="ct">CT Scan</option>
+                                <option value="ultrasound">Ultrasound</option>
                             </select>
                             <div class="invalid-feedback">Please select a service.</div>
                         </div>
@@ -1441,7 +1208,7 @@
                     <h5>Contact Info</h5>
                     <p><i class="fas fa-phone"></i> (123) 456-7890</p>
                     <p><i class="fas fa-envelope"></i> info@sbdiagnostics.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Barwala Rd, Begumpur Main Market, Opposite Bank of Baroda, Sector 38, Rohini, Delhi 110086</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Medical City</p>
                 </div>
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
@@ -1465,6 +1232,7 @@
             <div class="mt-4">
                 <h5>Our Latest Updates</h5>
                 <div id="socialFeed" class="d-flex justify-content-center">
+                    <!-- Placeholder for social media feed -->
                     <p>Follow us on social media for the latest updates!</p>
                 </div>
             </div>
